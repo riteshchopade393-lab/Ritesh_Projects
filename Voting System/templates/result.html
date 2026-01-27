@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}">
+</head>
+
+<body>
+    <h2>Voting Result</h2>
+    <ul>
+        <li>Candidate A: {{ votes["Candidate A"] }}</li>
+        <li>Candidate B: {{ votes["Candidate B"] }}</li>
+        <li>Candidate C: {{ votes["Candidate C"] }}</li>
+
+    </ul>
+    <a href="/">Go to Home</a>
+
+</body>
+
+</html>
