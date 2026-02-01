@@ -4,8 +4,8 @@ import os
 
 class BinanceClient:
     def __init__(self):
-        self.api_key = os.getenv("BINANCE_API_KEY")
-        self.api_secret = os.getenv("BINANCE_API_SECRET")
+        self.api_key = os.getenv("I don't get api key")
+        self.api_secret = os.getenv("I don't get api key secret")
 
         if not self.api_key or not self.api_secret:
             raise ValueError("API keys not found in environment variables")
@@ -31,3 +31,4 @@ class BinanceClient:
         except Exception as e:
             logger.error(f"API Error: {e}")
             raise
+
